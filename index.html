@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/fav_mini.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/d6d7c08a6a.js" crossorigin="anonymous"></script>
+    <title>Wedesign</title>
+</head>
+<body>
+    <header class="main-container">
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="logo">
+                    <h1><span class="icon"></span><a href="#">WeDesign</a></h1>
+                </div>
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                   <!--HAMBURGER MENU-->
+                   <button type="button" class="hamburger" id="menu-btn">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>    
+        </nav>
+        <!--Hero Section-->
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="text-center txt-xl ">We are WeDesign!</h1>
+                <p class="text-center">You dream, we design and build.</p>
+            </div>
+        </div>
+    </header>
+
+    <!--Mobile Menu-->
+    <div class="mobile-menu hidden " id="menu">
+        <ul>
+            <li><a href="#About"><i class="fa-solid fa-user"></i>About</a></li>
+            <li><a href="#Services"><i class="fa-solid fa-gear"></i>Services</a></li>
+            <li><a href="#Projects"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+            <li><a href="#Contact"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+        </ul>
+    </div>
+    
+
+    <!--About Section-->
+    <a name = "About"></a>
+    <section class="about-section">  
+            <div class="about-title">   
+                <h2 class="text-center">About Us</h2> 
+                <div class="liner"></div>
+            </div>
+            
+            <div class="about-container">
+                <div class="container">
+                    <div class="subtitle-tabs">
+                        <div class="subtitle text-center" style="background-color:#2A2D34; font-weight: 600;">Mission</div>
+                        <div class="subtitle text-center">Vision</div>
+                        <div class="subtitle text-center">Values</div>
+                    </div>
+                    <div id="box-text">
+                        Duis ac leo nisi. Mauris nec ex id lorem commodo rutrum rutrum a est.
+                         Cras facilisis sit amet lectus non posuere. Nullam non magna non enim blandit elementum.
+                    </div>  
+                </div>  
+            </div>
+    </section>
+    
+    
+    <!--Services section-->
+    <a name ="Services"></a>
+    <section class="services-section">
+        <div class="services-title">
+            <h2 class="text-center">Services</h2>
+            <div class="liner"></div>
+            
+        </div>
+        <div class="services-container">
+            <div class="container">
+                <div class="services-previous" id="service-pre">
+                    <p><</p>
+                </div>
+                <div class="services-content">
+                    <span id="service-subtitle">Web design.</span><p id="service-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus 
+                        tincidunt sem non sodales. Nunc et quam in magna vehicula sollicitudin. 
+                        Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum 
+                        dictum nisi.
+                    </p>
+                </div>
+                <div class="services-next " id="service-next">
+                    <p>></p>
+                </div>
+            </div>
+        </div>    
+    </section>    
+    
+    <!--Projects section-->
+    <a name ="Projects"></a>
+    <section class="project-section">
+        <div class="project-title">
+            <h2 class="text-center">Projects</h2>
+            <div class="liner"></div>
+            
+        </div>
+        <div class="outer-container">
+            <div class="project-container">
+                <div class="grid-col3" id="img-1">
+                    <!-- <img src="./images/project1.jpg" alt="pix1"> -->
+                    <span>Bird logo</span>
+                </div>
+                <div class="grid-col3"  id="img-2">
+                    <!-- <img src="./images/project2.jpg" alt="pix1"> -->
+                    <span>Emirates App</span>
+                </div>
+                <div class="grid-col3"  id="img-3">
+                    <!-- <img src="./images/project3.jpg" alt="pix1"> -->
+                    <span>Weather App</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section-->
+    <a name ="Contact"></a>
+    <section class="contact-section">
+        <div class="contact-title">
+            <h2 class="text-center">Contact</h2>
+            <div class="liner"></div>
+        </div>
+
+        <!--ge/742982c1-cb3c-42b9-bfd9-34c569488b7f-->
+        <div class="contact-container">
+                <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                    <div class="input100">
+                        <input type="text"  name='Subject' placeholder="Subject" required>
+                    </div>
+                    <div class="input100">
+                        <input type="text" name ="extra_fullname" placeholder="Fullname" required>
+                    </div>
+                    <div class="input100">
+                        <input type="text" name ="extra_email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="input100">
+                        <textarea name="text" placeholder="Message"></textarea>
+                    </div>
+                    <input type="hidden" name="access_token" value="32dfj7tdj6yagh7acb0stsyd" />
+
+                    <input type="hidden" name="success_url" value="https://www.google.com" />
+                    <input type="hidden" name="error_url" value="https://www.google.com" />
+                    <div class="inputSubmit">
+                        <input type="submit" id="submit_form" value="send">
+                    </div>
+                </form>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col3">
+                    <h3 class="txt-md">Follow us</h3>
+                        <a href="http://www.facebook.com" target="_blank"><img src="./images/social-icons/facebook.svg"></a>
+                        <a href="http://www.twitter.com" target="_blank"><img src="./images/social-icons/twitter.svg"></a>
+                        <a href="http://www.instagram.com" target="_blank"><img src="./images/social-icons/instagram.svg"></a>    
+                </div>
+                <div class="footer-col3">
+                    <h3 class="txt-md">Location</h3>
+                    <p>Av. Paulista, 500</p>
+                    <p>Sao Paulo/SP</p>
+                    <p>T. 2245-0977</p>
+                    <p>contact@wedesign.com.br</p>
+                </div>
+                <div class="footer-col3">
+                    <h3 class="txt-md">Opening times</h3>
+                    <p>Mon-Fri: 11h30 - 24h00 </p>
+                    <p>Saturday: 11h30 - 02h00</p>
+                    <p> Sunday: 11h30 - 18h</p>     
+                </div>
+            </div>
+            <div class="divider"></div>
+            <p class="text-center">&copy; <script> document.write(new Date().getFullYear())</script> Wedesign Company. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
